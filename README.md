@@ -13,3 +13,17 @@ to install requirements you need to write :
 before running the server make sure that the trader workstation app is running then write the following to run the server:
 
 `uvicorn main:app --host 0.0.0.0 --port 80`
+
+## Tradingview alert message
+
+The current tradingview message looks like this:
+
+```
+{
+"contract":"{{ticker}}",
+"side":"{{strategy.order.action}}",
+"quantity":{{strategy.position_size}},
+"order_type":"market",
+"limit":{{strategy.order.price}}
+}
+```
