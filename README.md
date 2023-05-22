@@ -27,3 +27,4 @@ The current tradingview message looks like this:
 "limit":{{strategy.order.price}}
 }
 ```
+so to make order you need to send this message to the `/webhook` endpoint
