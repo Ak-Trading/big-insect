@@ -2,17 +2,14 @@
 
 you need to follow the below guide to run this program
 
-## Requirements
+## Run with docker
 
-to install requirements you need to write :
+first you need to install docker `https://www.docker.com/products/docker-desktop/` and make sure it's running.
 
-`pip install -r requirements.txt`
+Then for the first time only run the setup.exe file.
 
-## Run the server
+After that you can run the app from run.exe file.
 
-before running the server make sure that the trader workstation app is running then write the following to run the server:
-
-`uvicorn main:app --host 0.0.0.0 --port 80`
 
 ## Tradingview alert message
 
@@ -27,4 +24,5 @@ The current tradingview message looks like this:
 "limit":{{strategy.order.price}}
 }
 ```
-so to make order you need to send this message to the `/webhook` endpoint
+
+so to make order you need to send this message to the `/webhook` endpoint.
