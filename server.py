@@ -1,6 +1,7 @@
 from fastapi import Depends, FastAPI
 from ib_insync import IB, Contract, MarketOrder, LimitOrder
 import asyncio
+import random
 
 app = FastAPI()
 
@@ -9,7 +10,7 @@ def get_ib():
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     ib = IB()
-    ib.connect()
+    ib.connect(clientId=random.randint(1, 100))
     try:
         yield ib
     finally:
@@ -27,12 +28,27 @@ def webhook(data: dict, ib: IB = Depends(get_ib)):
 
     contract = ib.qualifyContracts(contract)[0]
 
+    positions = ib.positions()
+
+    position = next((p for p in positions if p.contract == contract), None)
+
+    if position is not None:
+        quantity = data["quantity"] - position.position
+    else:
+        quantity = data["quantity"]
+
     if data["side"].upper() == "SELL":
-        data["quantity"] *= -1
+        quantity *= -1
 
     if data["order_type"] == "market":
-        order = MarketOrder(data["side"], data["quantity"])
+        order = MarketOrder(data["side"], quantity)
     else:
-        order = LimitOrder(data["side"], data["quantity"], data["limit"])
+        order = LimitOrder(data["side"], quantity, data["limit"])
 
     ib.placeOrder(contract, order)
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=80)
