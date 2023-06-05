@@ -82,10 +82,10 @@ imports:
     <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_weakrefset">_weakrefset</a>
  &#8226;   <a href="#abc">abc</a>
- &#8226;   <a href="#asyncio">asyncio</a>
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#contextlib">contextlib</a>
  &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#encodings">encodings</a>
  &#8226;   <a href="#encodings.aliases">encodings.aliases</a>
@@ -211,15 +211,18 @@ imports:
  &#8226;   <a href="#encodings.zlib_codec">encodings.zlib_codec</a>
  &#8226;   <a href="#enum">enum</a>
  &#8226;   <a href="#fastapi">fastapi</a>
+ &#8226;   <a href="#fastapi.middleware.cors">fastapi.middleware.cors</a>
  &#8226;   <a href="#fnmatch">fnmatch</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#genericpath">genericpath</a>
  &#8226;   <a href="#heapq">heapq</a>
  &#8226;   <a href="#ib_insync">ib_insync</a>
+ &#8226;   <a href="#ib_insync.util">ib_insync.util</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#keyword">keyword</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
+ &#8226;   <a href="#nest_asyncio">nest_asyncio</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#operator">operator</a>
  &#8226;   <a href="#os">os</a>
@@ -228,7 +231,6 @@ imports:
  &#8226;   <a href="#pyi_rth_inspect.py">pyi_rth_inspect.py</a>
  &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#pyi_rth_pkgutil.py">pyi_rth_pkgutil.py</a>
- &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#reprlib">reprlib</a>
  &#8226;   <a href="#sre_compile">sre_compile</a>
@@ -2630,7 +2632,6 @@ imported by:
  &#8226;   <a href="#ib_insync.util">ib_insync.util</a>
  &#8226;   <a href="#ib_insync.wrapper">ib_insync.wrapper</a>
  &#8226;   <a href="#nest_asyncio">nest_asyncio</a>
- &#8226;   <a href="#server.py">server.py</a>
  &#8226;   <a href="#sniffio._impl">sniffio._impl</a>
  &#8226;   <a href="#starlette._utils">starlette._utils</a>
  &#8226;   <a href="#unittest.async_case">unittest.async_case</a>
@@ -4776,6 +4777,7 @@ imported by:
  &#8226;   <a href="#numpy.lib.histograms">numpy.lib.histograms</a>
  &#8226;   <a href="#numpy.lib.npyio">numpy.lib.npyio</a>
  &#8226;   <a href="#numpy.testing._private.utils">numpy.testing._private.utils</a>
+ &#8226;   <a href="#server.py">server.py</a>
  &#8226;   <a href="#starlette.routing">starlette.routing</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#typing">typing</a>
@@ -8918,6 +8920,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#fastapi.middleware.asyncexitstack">fastapi.middleware.asyncexitstack</a>
+ &#8226;   <a href="#fastapi.middleware.cors">fastapi.middleware.cors</a>
 
   </div>
 
@@ -8937,6 +8940,23 @@ imports:
   <div class="import">
 imported by:
     <a href="#fastapi.applications">fastapi.applications</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="fastapi.middleware.cors"></a>
+  <a target="code" href="///C:/Users/kyril/.virtualenvs/big-insect-a2JSpQl8/lib/site-packages/fastapi/middleware/cors.py" type="text/plain"><tt>fastapi.middleware.cors</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#fastapi.middleware">fastapi.middleware</a>
+ &#8226;   <a href="#starlette.middleware.cors">starlette.middleware.cors</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#server.py">server.py</a>
 
   </div>
 
@@ -9598,6 +9618,7 @@ imported by:
  &#8226;   <a href="#server.py">server.py</a>
  &#8226;   <a href="#starlette._utils">starlette._utils</a>
  &#8226;   <a href="#starlette.concurrency">starlette.concurrency</a>
+ &#8226;   <a href="#starlette.middleware.cors">starlette.middleware.cors</a>
  &#8226;   <a href="#starlette.responses">starlette.responses</a>
  &#8226;   <a href="#starlette.routing">starlette.routing</a>
  &#8226;   <a href="#tempfile">tempfile</a>
@@ -10679,6 +10700,7 @@ imported by:
  &#8226;   <a href="#ib_insync.order">ib_insync.order</a>
  &#8226;   <a href="#ib_insync.ticker">ib_insync.ticker</a>
  &#8226;   <a href="#ib_insync.wrapper">ib_insync.wrapper</a>
+ &#8226;   <a href="#server.py">server.py</a>
 
   </div>
 
@@ -12781,6 +12803,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#ib_insync.util">ib_insync.util</a>
+ &#8226;   <a href="#server.py">server.py</a>
 
   </div>
 
@@ -19162,7 +19185,6 @@ imported by:
  &#8226;   <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#secrets">secrets</a>
- &#8226;   <a href="#server.py">server.py</a>
  &#8226;   <a href="#statistics">statistics</a>
  &#8226;   <a href="#tempfile">tempfile</a>
  &#8226;   <a href="#uuid">uuid</a>
@@ -19261,6 +19283,7 @@ imported by:
  &#8226;   <a href="#server.py">server.py</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#smtplib">smtplib</a>
+ &#8226;   <a href="#starlette.middleware.cors">starlette.middleware.cors</a>
  &#8226;   <a href="#starlette.routing">starlette.routing</a>
  &#8226;   <a href="#string">string</a>
  &#8226;   <a href="#sysconfig">sysconfig</a>
@@ -19978,6 +20001,7 @@ imported by:
  &#8226;   <a href="#fastapi.dependencies.utils">fastapi.dependencies.utils</a>
  &#8226;   <a href="#starlette.applications">starlette.applications</a>
  &#8226;   <a href="#starlette.formparsers">starlette.formparsers</a>
+ &#8226;   <a href="#starlette.middleware.cors">starlette.middleware.cors</a>
  &#8226;   <a href="#starlette.requests">starlette.requests</a>
  &#8226;   <a href="#starlette.responses">starlette.responses</a>
  &#8226;   <a href="#starlette.routing">starlette.routing</a>
@@ -20053,6 +20077,7 @@ imported by:
  &#8226;   <a href="#fastapi.middleware">fastapi.middleware</a>
  &#8226;   <a href="#starlette.applications">starlette.applications</a>
  &#8226;   <a href="#starlette.middleware.base">starlette.middleware.base</a>
+ &#8226;   <a href="#starlette.middleware.cors">starlette.middleware.cors</a>
  &#8226;   <a href="#starlette.middleware.errors">starlette.middleware.errors</a>
  &#8226;   <a href="#starlette.middleware.exceptions">starlette.middleware.exceptions</a>
  &#8226;   <a href="#starlette.routing">starlette.routing</a>
@@ -20079,6 +20104,28 @@ imports:
 imported by:
     <a href="#fastapi.applications">fastapi.applications</a>
  &#8226;   <a href="#starlette.applications">starlette.applications</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="starlette.middleware.cors"></a>
+  <a target="code" href="///C:/Users/kyril/.virtualenvs/big-insect-a2JSpQl8/lib/site-packages/starlette/middleware/cors.py" type="text/plain"><tt>starlette.middleware.cors</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#functools">functools</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#starlette.datastructures">starlette.datastructures</a>
+ &#8226;   <a href="#starlette.middleware">starlette.middleware</a>
+ &#8226;   <a href="#starlette.responses">starlette.responses</a>
+ &#8226;   <a href="#starlette.types">starlette.types</a>
+ &#8226;   <a href="#typing">typing</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#fastapi.middleware.cors">fastapi.middleware.cors</a>
 
   </div>
 
@@ -20215,6 +20262,7 @@ imported by:
  &#8226;   <a href="#fastapi.routing">fastapi.routing</a>
  &#8226;   <a href="#starlette.applications">starlette.applications</a>
  &#8226;   <a href="#starlette.middleware.base">starlette.middleware.base</a>
+ &#8226;   <a href="#starlette.middleware.cors">starlette.middleware.cors</a>
  &#8226;   <a href="#starlette.middleware.errors">starlette.middleware.errors</a>
  &#8226;   <a href="#starlette.middleware.exceptions">starlette.middleware.exceptions</a>
  &#8226;   <a href="#starlette.routing">starlette.routing</a>
@@ -20305,6 +20353,7 @@ imported by:
  &#8226;   <a href="#starlette.applications">starlette.applications</a>
  &#8226;   <a href="#starlette.datastructures">starlette.datastructures</a>
  &#8226;   <a href="#starlette.middleware.base">starlette.middleware.base</a>
+ &#8226;   <a href="#starlette.middleware.cors">starlette.middleware.cors</a>
  &#8226;   <a href="#starlette.middleware.errors">starlette.middleware.errors</a>
  &#8226;   <a href="#starlette.middleware.exceptions">starlette.middleware.exceptions</a>
  &#8226;   <a href="#starlette.requests">starlette.requests</a>
@@ -21396,6 +21445,7 @@ imported by:
  &#8226;   <a href="#starlette.formparsers">starlette.formparsers</a>
  &#8226;   <a href="#starlette.middleware">starlette.middleware</a>
  &#8226;   <a href="#starlette.middleware.base">starlette.middleware.base</a>
+ &#8226;   <a href="#starlette.middleware.cors">starlette.middleware.cors</a>
  &#8226;   <a href="#starlette.middleware.errors">starlette.middleware.errors</a>
  &#8226;   <a href="#starlette.middleware.exceptions">starlette.middleware.exceptions</a>
  &#8226;   <a href="#starlette.requests">starlette.requests</a>
