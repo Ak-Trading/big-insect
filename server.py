@@ -67,8 +67,7 @@ async def webhook(data: dict):
     if data["order_type"] == "market":
         order = MarketOrder(data["side"], quantity)
     else:
-        order = LimitOrder(data["side"], quantity, data["limit"])
-        order.outsideRTH = True
+        order = LimitOrder(data["side"], quantity, data["limit"], outsideRth=True)
 
     ib.placeOrder(contract, order)
 
